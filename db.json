@@ -1,11 +1,6 @@
 {
   "productos": [
     {
-      "id": 1,
-      "nombre": "Jugo de Zanahoria",
-      "precio": "31111"
-    },
-    {
       "id": 2,
       "nombre": "Jugo de Naranja",
       "precio": "1"
@@ -49,11 +44,6 @@
       "nombre": "Azucar",
       "precio": 200,
       "id": 10
-    },
-    {
-      "nombre": "Yerba Mate",
-      "precio": 100,
-      "id": 11
     }
   ]
 }
