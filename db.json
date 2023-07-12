@@ -1,19 +1,9 @@
 {
   "productos": [
     {
-      "id": 2,
-      "nombre": "Jugo de Naranja",
-      "precio": "1"
-    },
-    {
-      "nombre": "Jugo de Naranja",
-      "precio": "300",
-      "id": 3
-    },
-    {
-      "nombre": "Rib Eye 800g",
-      "precio": "200",
-      "id": 4
+      "id": 4,
+      "nombre": "Rib Eye 1000g",
+      "precio": "300"
     },
     {
       "nombre": "Jugo de Fresa",
@@ -39,11 +29,6 @@
       "nombre": "Paquete de Galletitas",
       "precio": 100,
       "id": 9
-    },
-    {
-      "nombre": "Azucar",
-      "precio": 200,
-      "id": 10
     }
   ]
 }
