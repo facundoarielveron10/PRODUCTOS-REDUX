@@ -4,6 +4,10 @@ import { useNavigate } from 'react-router-dom';
 
 // Actions de Redux
 import { crearNuevoProductoAction } from '../actions/ProductoActions';
+import {
+	mostrarAlertaAction,
+	ocultarAlertaAction,
+} from '../actions/AlertaActions';
 
 export default function NuevoProducto() {
 	const navigate = useNavigate();
@@ -24,10 +28,16 @@ export default function NuevoProducto() {
 		e.preventDefault();
 		// Validar formulario
 		if (nombre.trim() === '' || precio <= 0) {
+			const alerta = {
+				msg: 'Ambos campos son obligatorios',
+				classes: 'alert alert-danger text-center text-uppercase p3',
+			};
+
+			dispatch(mostrarAlertaAction(alerta));
 			return;
 		}
 		// Revisar errores
-
+		dispatch(ocultarAlertaAction());
 		// Crear el nuevo producto
 		agregarProducto({
 			nombre,
@@ -41,10 +51,14 @@ export default function NuevoProducto() {
 	// Acceder al state del store
 	const cargando = useSelector(state => state.productos.loading);
 	const error = useSelector(state => state.productos.error);
+	const alerta = useSelector(state => state.alerta.alerta);
 
 	return (
 		<div className="row justify-content-center">
 			<div className="col-md-8">
+				{alerta ? (
+					<p className={alerta.classes}>{alerta?.msg}</p>
+				) : null}
 				<div className="card">
 					<div className="card-body">
 						<h2 className="text-center mb-4 font-weight-bold">

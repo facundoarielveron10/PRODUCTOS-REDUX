@@ -2,8 +2,8 @@
   "productos": [
     {
       "id": 4,
-      "nombre": "Rib Eye 1000g",
-      "precio": "300"
+      "nombre": "Rib Eye 1800g",
+      "precio": "700"
     },
     {
       "nombre": "Jugo de Fresa",
@@ -29,6 +29,16 @@
       "nombre": "Paquete de Galletitas",
       "precio": 100,
       "id": 9
+    },
+    {
+      "nombre": "Azucar 300g",
+      "precio": 200,
+      "id": 10
+    },
+    {
+      "nombre": "Masita",
+      "precio": 200,
+      "id": 11
     }
   ]
 }
